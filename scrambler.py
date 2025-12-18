@@ -217,10 +217,3 @@ class Scrambler:
         with open(fname, 'w', encoding="utf-8") as f:
             for page in self.init_pages:
                 f.write(str(page) + '\n')
-
-
-scrambler = Scrambler('firsted.pdf')
-scrambler.make_new_pdf(
-    output_path="rearranged2.pdf", 
-    manual_json="manual.json"
-)
